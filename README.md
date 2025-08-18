@@ -45,3 +45,13 @@ https://www.youtube.com/watch?v=xs8mWnbMcmc
 
 https://www.prisma.io/docs/guides/nextjs
 https://www.inngest.com/docs/getting-started/nextjs-quick-start
+
+[e2b]
+
+1. npm i -g @e2b/cli  
+2. e2b auth login 
+3. e2b sandbox list 
+4. create sandbox-template/nextjs/e2b.Dockerfile
+5. e2b template build --name vibe-nextjs-test1
+6. e2b template build --name vibe-nextjs-test1-2 --cmd "/compile_page.sh"
+7. make template public: e2b template publish -t [teamid-in-sandbox-template/nextjs/e2b.toml]
