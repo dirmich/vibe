@@ -1,7 +1,7 @@
 import Prism from 'prismjs'
 import 'prismjs/components/prism-jsx.js'
 import 'prismjs/components/prism-typescript.js'
-import 'prismjs/themes/prism-coy.css'
+// import 'prismjs/themes/prism-coy.css'
 import { useEffect } from 'react'
 import './code-theme.css'
 interface Props {
