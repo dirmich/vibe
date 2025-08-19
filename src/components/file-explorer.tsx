@@ -118,7 +118,7 @@ const FileExplorer = ({ files }: Props) => {
           <ResizableHandle className="hover:bg-primary transition-colors" />
           <ResizablePanel defaultSize={70} minSize={50} className="bg-sidebar">
               {selectedFile && files[selectedFile] ? (
-                  <div className="h-full w-full flex flex-col">
+                  <div className="w-full flex-1 flex flex-col">
                       <div className="border-b bg-sidebar px-4 py-2 flex justify-between items-center gap-x-2">
                           <FileBreadcrumb filePath={selectedFile } />
                           <Hint text='Copy to clipboard' side='bottom'>
@@ -129,7 +129,7 @@ const FileExplorer = ({ files }: Props) => {
                                   </Button>
                           </Hint>
                       </div>
-                      <div className="flex-1">
+                      <div className="max-h-screen overflow-auto">
                           <CodeView
                           code={files[selectedFile]}
                           lang={getLanguageFromExt(selectedFile)}

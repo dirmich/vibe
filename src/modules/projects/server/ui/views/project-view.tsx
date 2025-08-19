@@ -36,7 +36,8 @@ const ProjectView = ({ projectId }: Props) => {
                       />
                 </Suspense>
               </ResizablePanel>
-              <ResizableHandle withHandle />
+              {/* <ResizableHandle withHandle /> */}
+              <ResizableHandle className='hover:bg-primary transition-colors' />
               <ResizablePanel defaultSize={65} minSize={50} >
                   {/* {JSON.stringify(messages,null,2)} */}
                   <Tabs className='h-full gap-y-0' defaultValue='preview' value={tabState} onValueChange={(v) => setTabState(v as 'preview' | 'code')}>
