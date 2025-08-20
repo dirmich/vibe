@@ -9,11 +9,11 @@ const GENERATION_COST = 1
 
 export const getUsageTracker = async () => {
   const { has } = await auth()
-  const hasPremiumAccess = has({ plan: 'pro' })
+  const hasProAccess = has({ plan: 'pro' })
   const usageTracker = new RateLimiterPrisma({
     storeClient: prisma,
     tableName: 'Usage',
-    points: hasPremiumAccess ? PRO_POINTS : FREE_POINTS,
+    points: hasProAccess ? PRO_POINTS : FREE_POINTS,
     duration: DURATION,
   })
   return usageTracker
