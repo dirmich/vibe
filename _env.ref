@@ -3,9 +3,9 @@ DATABASE_URL=postgresql://neondb_owner:npg_owMn1EDOmtL6@ep-silent-feather-a84jjd
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 # openai
-OPENAI_API_KEY=sk-proj-c1Ump6lyzJrfdnibkWmUT3BlbkFJSrzmTIujgnwhdboI2xAG
+OPENAI_API_KEY=
 # anthropic
-ANTHROPIC_API_KEY=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
+ANTHROPIC_API_KEY=
 
 # e2b 
 E2B_API_KEY=e2b_d09ccaae06b9c407de27bcc0e2b9b0220f58c074
